@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    overflow-x: hidden;
+    color: #031329;
+    background-color: #e9ddda;
+    font-family: 'Raleway',
+    sans-serif;
+}
+.navbar-toggler{
+ color:#FFFFFF !important;
+}
+
+.nav-link  {
+    color:#FFFFFF !important;
+}
+
+.contents{
+    width:100%;
+}
+.f_icon{
+    color:#031329;
+    text-align: center;
+    margin: 2vh 5vw 2vh 5vw ;
+}
+
+.social-icons {
+   text-align: center;
+}
+h6{
+    animation: 3s infinite alternate slidein;
+}
+  
+.navbrand h1{
+    color:#cd9688;
+    float: left;
+}
+
+p{
+    color: #031329;
+}
+
+.menucontent{
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+.menucontent ul{
+    display: flex;
+    padding-top: 2%;
+    margin-left: 20vw;
+}
+
+.menucontent ul li {
+    align-items: center;
+    margin-left: 2vw;
+}
+.nav {
+   padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    position: sticky;
+    display:flex;
+    background-color: #031329;
+    font-family: 'Raleway',
+}
+.navbar{
+    list-style:none;
+}
+
+
+h1{ 
+    font-family: 'Raleway';
+    color: #C99383;
+    font-size: 30px;  
+    text-decoration: none;   
+}
+
+
+a{
+ text-decoration: none;
+}
+
+
+.btn{
+    color:white;
+}
+ul { 
+   
+    list-style: none;
+    font-family: 'Courier New';  
+}
+a{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}

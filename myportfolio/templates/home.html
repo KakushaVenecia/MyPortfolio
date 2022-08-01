@@ -1,0 +1,71 @@
+{%extends 'base.html'%}
+{% block content %}
+
+{%for profile in profiles%}
+<img src="{{profile.image}}" alt="" style="max-width:100%;height:60vh;padding-top:1vh;
+padding-left:1vh; float:left; margin: 0 0.7vh 0 0;">
+<div>
+    <p style="padding-top:3.5vh; padding-right:3.5vh; font-size:22px;"> Hello there! <br>
+         My name is Venecia Kakusha. Most people call me Ven,
+        Venee or Kakusha. Thank you for taking the time to
+        stop by and check out what I am all about and what I do.<br>{{profile.text}} <br>My Current Stack is
+        :<strong>Frontend:</strong>HTML,
+        CSS,Javascript and UI frameworks and
+        libraries,
+         <strong>Backend:</strong> Python-Django, Python-Flask, Angular, and <strong>Database:</strong> Postgresql. </p>
+    <br>
+</div>
+{%endfor%}
+
+<section style="padding-left:10vh;">
+    <a href="https://drive.google.com/file/d/1T4oB9kz7PRFhekxjG3-rfXwMqHXDWaP5/view?usp=sharing" class="btn" style="background-color: #031329db; align-content:center;
+    margin-bottom: 5px; color:#fefbfa">Download
+        Resume</a> &nbsp;&nbsp;
+    <a href="mailto:kakushavenecia@gmail.com" class=" btn"
+        style="background-color: #031329db; align-content:center; margin-bottom: 5px; color:#fefbfa">Hire Me</a>
+</section>
+<div class="container-fluid" id="projects" style="padding-top:10%;">
+    <h2 style="text-align:center;color:rgb(32, 32, 80); font-weight:bold;">MY PROJECTS</h2>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3">
+        {%for project in projects%}
+        <div class="col mb-4">
+            <div class="card" style="height:auto;">
+                <img src="{{project.image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{project.title}}</h5>
+                    <h6 class="card-title" style="font-weight:bold;">{{project.technology}} </h6>
+                    <p class="card-text">{{project.description}}</p>
+                    <a href=" {{project.project_url}}" class="btn"
+                        style="background-color: #031329db; align-content:flex-end; margin-bottom: 5px; color:#fefbfa">
+                        View Project</a>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+
+
+    </div>
+</div>
+    <p style="text-align:center; font-size:20px;"> These are works in progress.I have worked on more than 20 projects
+        individually and more than 5, collaboratively. For more projects, Check out my Github Profile </p>
+
+    <h2 style="text-align:center;color:rgb(32, 32, 80); font-weight:bold;" id="connect">CONNECT WITH ME</h2>
+    <div class="container">
+        <div class="contents">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/venecia-k-729b68142/" target="blank">
+                    <i class="fa-brands fa-linkedin fa-5x f_icon"></i>
+                </a>
+                <a href="mailto:kakushavenecia@gmail.com" class="img img-rounded" target="_blank">
+                    <i class="fa-solid fa-envelope fa-5x f_icon"></i>
+                </a>
+                <a href="https://github.com/KakushaVenecia" target="blank">
+                        <i class="fa-brands fa-github fa-5x f_icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{%endblock%}
